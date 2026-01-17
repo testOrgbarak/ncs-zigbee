@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "build_backend"
+backend-path = ["."]
+
+[project]
+name = "run-project"
+version = "0.1.0"
+
+[project.scripts]
+run = "run:main"
+
+[tool.setuptools]
+py-modules = ["run"]
+packages = []
